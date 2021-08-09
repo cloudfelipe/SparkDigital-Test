@@ -47,12 +47,4 @@ final class AppCoordinator: AppCoordinatorType {
             router?.pushViewController(viewController)
         }
     }
-    
-    deinit {
-        debugPrint("DEINIT COORDINATOR")
-    }
-}
-
-struct BaseURL: BaseURLProviderType {
-    var baseURL: String = "https://jsonplaceholder.typicode.com"
 }

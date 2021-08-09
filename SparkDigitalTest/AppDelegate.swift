@@ -33,3 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+struct BaseURL: BaseURLProviderType {
+    var baseURL: String = "https://jsonplaceholder.typicode.com"
+}

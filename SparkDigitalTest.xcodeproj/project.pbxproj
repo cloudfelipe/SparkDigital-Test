@@ -43,6 +43,7 @@
 		A5D3FBAF26C0FADF00BEFA88 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBAE26C0FADF00BEFA88 /* PhotoDetailViewController.swift */; };
 		A5D3FBB126C0FC1A00BEFA88 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB026C0FC1A00BEFA88 /* PhotoDetailView.swift */; };
 		A5D3FBB326C0FC3800BEFA88 /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB226C0FC3800BEFA88 /* PhotoDetailViewModel.swift */; };
+		A5D3FBB526C10B4300BEFA88 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB426C10B4300BEFA88 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		A5D3FBAE26C0FADF00BEFA88 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		A5D3FBB026C0FC1A00BEFA88 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		A5D3FBB226C0FC3800BEFA88 /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
+		A5D3FBB426C10B4300BEFA88 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BFA2401B0E5B388F25960F8B /* Pods-SparkDigitalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C974D380DE2EDCB5EAD47D3E /* Pods-SparkDigitalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest.release.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest.release.xcconfig"; sourceTree = "<group>"; };
 		D905B11AACE4A4AF625B5786 /* Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */,
 				A54D49BB26C0B79A00AFB7B4 /* Info.plist */,
 				A54D49E826C0BB6D00AFB7B4 /* Core */,
+				A54D49FB26C0C8E700AFB7B4 /* Extensions */,
 			);
 			path = SparkDigitalTest;
 			sourceTree = "<group>";
@@ -248,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				A54D49E526C0BAD000AFB7B4 /* Interactors */,
-				A54D49FB26C0C8E700AFB7B4 /* Extensions */,
 				A54D49EC26C0BC1300AFB7B4 /* Models */,
 				A54D49E926C0BB9300AFB7B4 /* Networking */,
 			);
@@ -297,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				A54D49FC26C0C8F800AFB7B4 /* URLRequest+Extensions.swift */,
+				A5D3FBB426C10B4300BEFA88 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				A54D49DF26C0B8EC00AFB7B4 /* AppCoordinator.swift in Sources */,
 				A5D3FBB126C0FC1A00BEFA88 /* PhotoDetailView.swift in Sources */,
 				A54D49F426C0C4FB00AFB7B4 /* APIPhoto.swift in Sources */,
+				A5D3FBB526C10B4300BEFA88 /* UIView+Extensions.swift in Sources */,
 				A54D49EF26C0BC2B00AFB7B4 /* APIRequest.swift in Sources */,
 				A54D49FF26C0C91B00AFB7B4 /* APIEndpoint.swift in Sources */,
 				A54D49E426C0B9B000AFB7B4 /* PhotoListViewController.swift in Sources */,

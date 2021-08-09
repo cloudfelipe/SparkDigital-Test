@@ -26,6 +26,11 @@ protocol PhotoListViewModelType: AnyObject {
     func getPhotos()
 }
 
+struct PhotoListViewData {
+    let name: String
+    let thumbnail: Observable<String>
+}
+
 final class PhotoListViewModelImplementation: PhotoListViewModelType {
     
     struct InputDependencies {
@@ -34,7 +39,6 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
         let imageDownloader: ImageDownloadable
     }
     
-    private let dependencies: InputDependencies
     let disposeBag = DisposeBag()
     
     var photos: Observable<[PhotoListViewData]> {
@@ -46,8 +50,9 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
     var dataRequestState: Observable<DataRequestState> {
         return requestState.asObservable()
     }
-    private let requestState = BehaviorRelay<DataRequestState>(value: .normal)
     
+    private let requestState = BehaviorRelay<DataRequestState>(value: .normal)
+    private let dependencies: InputDependencies
     private var photosRelay = BehaviorRelay<[APIPhoto]>(value: [])
     
     init(dependencies: InputDependencies) {
@@ -83,9 +88,4 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
                               thumbnail: self.dependencies.imageDownloader.download(from: apiPhoto.thumbnailUrl)) }
         return listData
     }
-}
-
-struct PhotoListViewData {
-    let name: String
-    let thumbnail: Observable<String>
 }
