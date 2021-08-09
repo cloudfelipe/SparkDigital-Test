@@ -32,7 +32,7 @@ final class PhotosServices: WebService, PhotoServiceType {
         
         let fileCachePath = fileManager
             .temporaryDirectory
-            .appendingPathComponent(url.lastPathComponent, isDirectory: false)
+            .appendingPathComponent(url.pathComponents.dropFirst().joined(separator: "_"), isDirectory: false)
         
         if fileManager.fileExists(atPath: fileCachePath.path) {
             completion(.success(fileCachePath.path))

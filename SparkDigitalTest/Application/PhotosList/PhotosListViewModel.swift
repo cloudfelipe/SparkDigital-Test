@@ -18,11 +18,11 @@ enum DataRequestState {
 }
 
 protocol PhotoListViewModelType: AnyObject {
-    func viewDidLoad()
-    
+    var disposeBag: DisposeBag { get }
     var photos: Observable<[PhotoListViewData]> { get }
     var dataRequestState: Observable<DataRequestState> { get }
     func photoSelected(at index: Int)
+    func viewDidLoad()
 }
 
 final class PhotoListViewModelImplementation: PhotoListViewModelType {
@@ -34,6 +34,7 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
     }
     
     private let dependencies: InputDependencies
+    let disposeBag = DisposeBag()
     
     var photos: Observable<[PhotoListViewData]> {
         photosRelay.asObservable()
@@ -60,6 +61,7 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
         dependencies.photosGettable.photos { [weak self] result in
             switch result {
             case .success(let photos):
+                self?.apiPhotos = photos
                 self?.requestState.accept(.normal)
                 self?.process(photos: photos)
             case .failure(let error):

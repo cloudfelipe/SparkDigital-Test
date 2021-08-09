@@ -11,7 +11,6 @@ import RxSwift
 final class PhotoListViewController: UIViewController {
     
     private var photoView: PhotoListView = PhotoListView()
-    
     private let viewModel: PhotoListViewModelType
     private var collectionAdapter: CollectionViewDataAdapter!
     private let disposeBag = DisposeBag()
@@ -21,19 +20,20 @@ final class PhotoListViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    override func loadView() {
-        view = photoView
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func loadView() {
+        view = photoView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Photo List"
         collectionAdapter = CollectionViewDataAdapter(collectionView: photoView.collectionView)
-        setupBinding()
         viewModel.viewDidLoad()
+        setupBinding()
     }
     
     private func setupBinding() {
@@ -42,12 +42,12 @@ final class PhotoListViewController: UIViewController {
             .subscribe { [weak collectionAdapter] photosList in
                 collectionAdapter?.setItems(photosList)
             }
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
         viewModel.dataRequestState
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] in self?.requestState($0) })
-            .disposed(by: disposeBag)
+            .disposed(by: viewModel.disposeBag)
         
         photoView.collectionView.rx.itemSelected
             .subscribe(onNext: { [weak viewModel] in viewModel?.photoSelected(at: $0.row) })

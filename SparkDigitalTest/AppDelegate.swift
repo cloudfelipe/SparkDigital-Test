@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         rootNavigationVC = UINavigationController()
         
-        let appCoordinator = AppCoordinator(router: rootNavigationVC)
+        let client = WebClient()
+        let photoService = PhotosServices(baseUrlProvider: BaseURL(), client: client)
+        let photosInteractor = GetPhotosInteractor(service: photoService)
+        let imageDownloader = ImageDownloaderInteractor(service: photoService)
+        
+        let dependencies = AppCoordinator.InputDependencies(photosGettable: photosInteractor, imageDownloader: imageDownloader)
+        let appCoordinator = AppCoordinator(router: rootNavigationVC, dependencies: dependencies)
         appCoordinator.start()
         
         window = UIWindow(frame: UIScreen.main.bounds)
