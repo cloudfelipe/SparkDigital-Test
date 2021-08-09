@@ -24,6 +24,7 @@ final class CollectionViewDataAdapter: NSObject, UICollectionViewDelegateFlowLay
     
     func setItems(_ items: [PhotoListViewData]) {
         self.items = items
+        collectionView?.refreshControl?.endRefreshing()
         reload()
     }
     

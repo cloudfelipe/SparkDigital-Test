@@ -52,6 +52,11 @@ final class PhotoListViewController: UIViewController {
         photoView.collectionView.rx.itemSelected
             .subscribe(onNext: { [weak viewModel] in viewModel?.photoSelected(at: $0.row) })
             .disposed(by: disposeBag)
+        
+        photoView.refreshControl.rx.controlEvent(.valueChanged)
+            .subscribe(onNext: { [weak viewModel] in
+                viewModel?.getPhotos()
+            }).disposed(by: disposeBag)
     }
     
     private func requestState(_ requestState: DataRequestState) {

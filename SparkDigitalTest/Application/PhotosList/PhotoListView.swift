@@ -10,6 +10,8 @@ import SwifterSwift
 
 final class PhotoListView: UIView {
     
+    let refreshControl = UIRefreshControl()
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -24,6 +26,7 @@ final class PhotoListView: UIView {
         super.init(frame: frame)
         
         self.addSubview(collectionView)
+        collectionView.refreshControl = refreshControl
         setupConstraints()
     }
     

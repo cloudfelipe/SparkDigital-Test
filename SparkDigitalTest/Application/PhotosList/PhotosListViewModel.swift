@@ -23,6 +23,7 @@ protocol PhotoListViewModelType: AnyObject {
     var dataRequestState: Observable<DataRequestState> { get }
     func photoSelected(at index: Int)
     func viewDidLoad()
+    func getPhotos()
 }
 
 final class PhotoListViewModelImplementation: PhotoListViewModelType {
@@ -37,7 +38,9 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
     let disposeBag = DisposeBag()
     
     var photos: Observable<[PhotoListViewData]> {
-        photosRelay.asObservable()
+        photosRelay
+            .map { self.process(photos: $0) }
+            .asObservable()
     }
     
     var dataRequestState: Observable<DataRequestState> {
@@ -45,8 +48,7 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
     }
     private let requestState = BehaviorRelay<DataRequestState>(value: .normal)
     
-    private var photosRelay = BehaviorRelay<[PhotoListViewData]>(value: [])
-    private var apiPhotos = [APIPhoto]()
+    private var photosRelay = BehaviorRelay<[APIPhoto]>(value: [])
     
     init(dependencies: InputDependencies) {
         self.dependencies = dependencies
@@ -56,14 +58,14 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
         getPhotos()
     }
     
-    private func getPhotos() {
+    func getPhotos() {
+        photosRelay.accept([])
         requestState.accept(.loading)
         dependencies.photosGettable.photos { [weak self] result in
             switch result {
             case .success(let photos):
-                self?.apiPhotos = photos
                 self?.requestState.accept(.normal)
-                self?.process(photos: photos)
+                self?.photosRelay.accept(photos)
             case .failure(let error):
                 debugPrint(error)
                 self?.requestState.accept(.error)
@@ -71,14 +73,15 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
         }
     }
     
-    private func process(photos: [APIPhoto]) {
-        let listData = photos.map { apiPhoto in
-            PhotoListViewData(name: apiPhoto.title, thumbnail: self.dependencies.imageDownloader.download(from: apiPhoto.thumbnailUrl)) }
-        photosRelay.accept(listData)
+    func photoSelected(at index: Int) {
+        dependencies.coordinator.showPhotoDetail(photosRelay.value[index])
     }
     
-    func photoSelected(at index: Int) {
-        dependencies.coordinator.showPhotoDetail(apiPhotos[index])
+    private func process(photos: [APIPhoto]) -> [PhotoListViewData] {
+        let listData = photos.map { apiPhoto in
+            PhotoListViewData(name: apiPhoto.title,
+                              thumbnail: self.dependencies.imageDownloader.download(from: apiPhoto.thumbnailUrl)) }
+        return listData
     }
 }
 
