@@ -36,7 +36,7 @@ final class CollectionViewDataAdapter: NSObject, UICollectionViewDelegateFlowLay
     
     func hideLoading() {
         DispatchQueue.main.async {
-            self.collectionView?.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+            self.collectionView?.hideSkeleton(reloadDataAfter: false, transition: .crossDissolve(0.25))
         }
     }
     
