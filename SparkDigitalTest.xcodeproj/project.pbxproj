@@ -12,6 +12,27 @@
 		A54D49BA26C0B79A00AFB7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */; };
 		A54D49C526C0B79A00AFB7B4 /* SparkDigitalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49C426C0B79A00AFB7B4 /* SparkDigitalTestTests.swift */; };
 		A54D49D026C0B79A00AFB7B4 /* SparkDigitalTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49CF26C0B79A00AFB7B4 /* SparkDigitalTestUITests.swift */; };
+		A54D49DF26C0B8EC00AFB7B4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49DE26C0B8EC00AFB7B4 /* AppCoordinator.swift */; };
+		A54D49E226C0B97D00AFB7B4 /* PhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49E126C0B97D00AFB7B4 /* PhotosListViewModel.swift */; };
+		A54D49E426C0B9B000AFB7B4 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49E326C0B9B000AFB7B4 /* PhotoListViewController.swift */; };
+		A54D49E726C0BAE300AFB7B4 /* GetPhotosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49E626C0BAE300AFB7B4 /* GetPhotosInteractor.swift */; };
+		A54D49EB26C0BBB600AFB7B4 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49EA26C0BBB600AFB7B4 /* WebClient.swift */; };
+		A54D49EF26C0BC2B00AFB7B4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49EE26C0BC2B00AFB7B4 /* APIRequest.swift */; };
+		A54D49F226C0BCCA00AFB7B4 /* PhotosServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F126C0BCCA00AFB7B4 /* PhotosServices.swift */; };
+		A54D49F426C0C4FB00AFB7B4 /* APIPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F326C0C4FB00AFB7B4 /* APIPhoto.swift */; };
+		A54D49F626C0C86800AFB7B4 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F526C0C86800AFB7B4 /* WebService.swift */; };
+		A54D49F826C0C88A00AFB7B4 /* BaseURLProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F726C0C88A00AFB7B4 /* BaseURLProviderType.swift */; };
+		A54D49FA26C0C8B500AFB7B4 /* WebClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F926C0C8B500AFB7B4 /* WebClientError.swift */; };
+		A54D49FD26C0C8F800AFB7B4 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49FC26C0C8F800AFB7B4 /* URLRequest+Extensions.swift */; };
+		A54D49FF26C0C91B00AFB7B4 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49FE26C0C91B00AFB7B4 /* APIEndpoint.swift */; };
+		A54D4A0326C0C9BC00AFB7B4 /* APIEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A0226C0C9BC00AFB7B4 /* APIEndpointTests.swift */; };
+		A54D4A0426C0CA0700AFB7B4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49EE26C0BC2B00AFB7B4 /* APIRequest.swift */; };
+		A54D4A0526C0CA0900AFB7B4 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49FE26C0C91B00AFB7B4 /* APIEndpoint.swift */; };
+		A54D4A0626C0CA9B00AFB7B4 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49FC26C0C8F800AFB7B4 /* URLRequest+Extensions.swift */; };
+		A54D4A0726C0CAA800AFB7B4 /* WebClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F926C0C8B500AFB7B4 /* WebClientError.swift */; };
+		A54D4A0A26C0CAFA00AFB7B4 /* WebClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A0926C0CAFA00AFB7B4 /* WebClientTests.swift */; };
+		A54D4A0B26C0CB0D00AFB7B4 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49EA26C0BBB600AFB7B4 /* WebClient.swift */; };
+		A54D4A0E26C0CB4500AFB7B4 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A0D26C0CB4500AFB7B4 /* URLProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +64,22 @@
 		A54D49CB26C0B79A00AFB7B4 /* SparkDigitalTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkDigitalTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54D49CF26C0B79A00AFB7B4 /* SparkDigitalTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkDigitalTestUITests.swift; sourceTree = "<group>"; };
 		A54D49D126C0B79A00AFB7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54D49DE26C0B8EC00AFB7B4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A54D49E126C0B97D00AFB7B4 /* PhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewModel.swift; sourceTree = "<group>"; };
+		A54D49E326C0B9B000AFB7B4 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		A54D49E626C0BAE300AFB7B4 /* GetPhotosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotosInteractor.swift; sourceTree = "<group>"; };
+		A54D49EA26C0BBB600AFB7B4 /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		A54D49EE26C0BC2B00AFB7B4 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		A54D49F126C0BCCA00AFB7B4 /* PhotosServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosServices.swift; sourceTree = "<group>"; };
+		A54D49F326C0C4FB00AFB7B4 /* APIPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPhoto.swift; sourceTree = "<group>"; };
+		A54D49F526C0C86800AFB7B4 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A54D49F726C0C88A00AFB7B4 /* BaseURLProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLProviderType.swift; sourceTree = "<group>"; };
+		A54D49F926C0C8B500AFB7B4 /* WebClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientError.swift; sourceTree = "<group>"; };
+		A54D49FC26C0C8F800AFB7B4 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		A54D49FE26C0C91B00AFB7B4 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		A54D4A0226C0C9BC00AFB7B4 /* APIEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointTests.swift; sourceTree = "<group>"; };
+		A54D4A0926C0CAFA00AFB7B4 /* WebClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientTests.swift; sourceTree = "<group>"; };
+		A54D4A0D26C0CB4500AFB7B4 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				A54D49AD26C0B79800AFB7B4 /* AppDelegate.swift */,
+				A54D49DD26C0B8DB00AFB7B4 /* Application */,
 				A54D49B626C0B79900AFB7B4 /* Assets.xcassets */,
 				A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */,
 				A54D49BB26C0B79A00AFB7B4 /* Info.plist */,
+				A54D49E826C0BB6D00AFB7B4 /* Core */,
 			);
 			path = SparkDigitalTest;
 			sourceTree = "<group>";
@@ -105,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A54D49C426C0B79A00AFB7B4 /* SparkDigitalTestTests.swift */,
+				A54D4A0026C0C99400AFB7B4 /* Networking */,
 				A54D49C626C0B79A00AFB7B4 /* Info.plist */,
 			);
 			path = SparkDigitalTestTests;
@@ -117,6 +157,107 @@
 				A54D49D126C0B79A00AFB7B4 /* Info.plist */,
 			);
 			path = SparkDigitalTestUITests;
+			sourceTree = "<group>";
+		};
+		A54D49DD26C0B8DB00AFB7B4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49DE26C0B8EC00AFB7B4 /* AppCoordinator.swift */,
+				A54D49E026C0B94E00AFB7B4 /* PhotosList */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A54D49E026C0B94E00AFB7B4 /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49E126C0B97D00AFB7B4 /* PhotosListViewModel.swift */,
+				A54D49E326C0B9B000AFB7B4 /* PhotoListViewController.swift */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		A54D49E526C0BAD000AFB7B4 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49E626C0BAE300AFB7B4 /* GetPhotosInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A54D49E826C0BB6D00AFB7B4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49E526C0BAD000AFB7B4 /* Interactors */,
+				A54D49FB26C0C8E700AFB7B4 /* Extensions */,
+				A54D49EC26C0BC1300AFB7B4 /* Models */,
+				A54D49E926C0BB9300AFB7B4 /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A54D49E926C0BB9300AFB7B4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49F026C0BCB600AFB7B4 /* Services */,
+				A54D49ED26C0BC1C00AFB7B4 /* APIModels */,
+				A54D49EA26C0BBB600AFB7B4 /* WebClient.swift */,
+				A54D49F926C0C8B500AFB7B4 /* WebClientError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A54D49EC26C0BC1300AFB7B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49F326C0C4FB00AFB7B4 /* APIPhoto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A54D49ED26C0BC1C00AFB7B4 /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49EE26C0BC2B00AFB7B4 /* APIRequest.swift */,
+				A54D49FE26C0C91B00AFB7B4 /* APIEndpoint.swift */,
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
+		A54D49F026C0BCB600AFB7B4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49F526C0C86800AFB7B4 /* WebService.swift */,
+				A54D49F726C0C88A00AFB7B4 /* BaseURLProviderType.swift */,
+				A54D49F126C0BCCA00AFB7B4 /* PhotosServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A54D49FB26C0C8E700AFB7B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A54D49FC26C0C8F800AFB7B4 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A54D4A0026C0C99400AFB7B4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A54D4A0C26C0CB3900AFB7B4 /* Mocks */,
+				A54D4A0226C0C9BC00AFB7B4 /* APIEndpointTests.swift */,
+				A54D4A0926C0CAFA00AFB7B4 /* WebClientTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A54D4A0C26C0CB3900AFB7B4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A54D4A0D26C0CB4500AFB7B4 /* URLProtocolMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +389,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54D49FD26C0C8F800AFB7B4 /* URLRequest+Extensions.swift in Sources */,
+				A54D49F226C0BCCA00AFB7B4 /* PhotosServices.swift in Sources */,
+				A54D49F826C0C88A00AFB7B4 /* BaseURLProviderType.swift in Sources */,
+				A54D49FA26C0C8B500AFB7B4 /* WebClientError.swift in Sources */,
+				A54D49DF26C0B8EC00AFB7B4 /* AppCoordinator.swift in Sources */,
+				A54D49F426C0C4FB00AFB7B4 /* APIPhoto.swift in Sources */,
+				A54D49EF26C0BC2B00AFB7B4 /* APIRequest.swift in Sources */,
+				A54D49FF26C0C91B00AFB7B4 /* APIEndpoint.swift in Sources */,
+				A54D49E426C0B9B000AFB7B4 /* PhotoListViewController.swift in Sources */,
+				A54D49E726C0BAE300AFB7B4 /* GetPhotosInteractor.swift in Sources */,
 				A54D49AE26C0B79800AFB7B4 /* AppDelegate.swift in Sources */,
+				A54D49E226C0B97D00AFB7B4 /* PhotosListViewModel.swift in Sources */,
+				A54D49F626C0C86800AFB7B4 /* WebService.swift in Sources */,
+				A54D49EB26C0BBB600AFB7B4 /* WebClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +411,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A54D49C526C0B79A00AFB7B4 /* SparkDigitalTestTests.swift in Sources */,
+				A54D4A0E26C0CB4500AFB7B4 /* URLProtocolMock.swift in Sources */,
+				A54D4A0A26C0CAFA00AFB7B4 /* WebClientTests.swift in Sources */,
+				A54D4A0426C0CA0700AFB7B4 /* APIRequest.swift in Sources */,
+				A54D4A0726C0CAA800AFB7B4 /* WebClientError.swift in Sources */,
+				A54D4A0326C0C9BC00AFB7B4 /* APIEndpointTests.swift in Sources */,
+				A54D4A0626C0CA9B00AFB7B4 /* URLRequest+Extensions.swift in Sources */,
+				A54D4A0526C0CA0900AFB7B4 /* APIEndpoint.swift in Sources */,
+				A54D4A0B26C0CB0D00AFB7B4 /* WebClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
