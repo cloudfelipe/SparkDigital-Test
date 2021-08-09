@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A54D49AE26C0B79800AFB7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49AD26C0B79800AFB7B4 /* AppDelegate.swift */; };
-		A54D49B026C0B79800AFB7B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49AF26C0B79800AFB7B4 /* SceneDelegate.swift */; };
-		A54D49B226C0B79800AFB7B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49B126C0B79800AFB7B4 /* ViewController.swift */; };
-		A54D49B526C0B79800AFB7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54D49B326C0B79800AFB7B4 /* Main.storyboard */; };
 		A54D49B726C0B79900AFB7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54D49B626C0B79900AFB7B4 /* Assets.xcassets */; };
 		A54D49BA26C0B79A00AFB7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */; };
 		A54D49C526C0B79A00AFB7B4 /* SparkDigitalTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49C426C0B79A00AFB7B4 /* SparkDigitalTestTests.swift */; };
@@ -37,9 +34,6 @@
 /* Begin PBXFileReference section */
 		A54D49AA26C0B79800AFB7B4 /* SparkDigitalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkDigitalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54D49AD26C0B79800AFB7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A54D49AF26C0B79800AFB7B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A54D49B126C0B79800AFB7B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A54D49B426C0B79800AFB7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A54D49B626C0B79900AFB7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54D49B926C0B79A00AFB7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A54D49BB26C0B79A00AFB7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,9 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				A54D49AD26C0B79800AFB7B4 /* AppDelegate.swift */,
-				A54D49AF26C0B79800AFB7B4 /* SceneDelegate.swift */,
-				A54D49B126C0B79800AFB7B4 /* ViewController.swift */,
-				A54D49B326C0B79800AFB7B4 /* Main.storyboard */,
 				A54D49B626C0B79900AFB7B4 /* Assets.xcassets */,
 				A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */,
 				A54D49BB26C0B79A00AFB7B4 /* Info.plist */,
@@ -233,7 +224,6 @@
 			files = (
 				A54D49BA26C0B79A00AFB7B4 /* LaunchScreen.storyboard in Resources */,
 				A54D49B726C0B79900AFB7B4 /* Assets.xcassets in Resources */,
-				A54D49B526C0B79800AFB7B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54D49B226C0B79800AFB7B4 /* ViewController.swift in Sources */,
 				A54D49AE26C0B79800AFB7B4 /* AppDelegate.swift in Sources */,
-				A54D49B026C0B79800AFB7B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +284,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A54D49B326C0B79800AFB7B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A54D49B426C0B79800AFB7B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,7 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = felipecoStudios.SparkDigitalTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,7 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = felipecoStudios.SparkDigitalTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
