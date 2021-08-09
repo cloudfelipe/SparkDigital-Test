@@ -1,0 +1,58 @@
+PODS:
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SkeletonView (1.21.2)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
+
+DEPENDENCIES:
+  - RxCocoa
+  - RxSwift
+  - SkeletonView
+  - SwifterSwift
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SkeletonView
+    - SwifterSwift
+
+SPEC CHECKSUMS:
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SkeletonView: a085533443fed0198309f1979780afb6e80eaedd
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+
+PODFILE CHECKSUM: 6f39733ea7e831c685c054c6cee156ac62b70f56
+
+COCOAPODS: 1.10.1

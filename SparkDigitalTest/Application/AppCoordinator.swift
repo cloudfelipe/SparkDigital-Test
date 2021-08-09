@@ -8,7 +8,7 @@
 import UIKit
 
 protocol AppCoordinatorType {
-    
+    func showPhotoDetail(_ photo: APIPhoto)
 }
 
 final class AppCoordinator: AppCoordinatorType {
@@ -23,10 +23,16 @@ final class AppCoordinator: AppCoordinatorType {
         let client = WebClient()
         let photoService = PhotosServices(baseUrlProvider: BaseURL(), client: client)
         let photosInteractor = GetPhotosInteractor(service: photoService)
-        let inputDependencies = PhotoListViewModelImplementation.InputDependencies(photosGettable: photosInteractor)
+        let imageDownloader = ImageDownloaderInteractor(service: photoService)
+        let inputDependencies = PhotoListViewModelImplementation
+            .InputDependencies(coordinator: self, photosGettable: photosInteractor, imageDownloader: imageDownloader)
         let viewModel = PhotoListViewModelImplementation(dependencies: inputDependencies)
         let viewController = PhotoListViewController(viewModel: viewModel)
         router?.pushViewController(viewController, animated: false)
+    }
+    
+    func showPhotoDetail(_ photo: APIPhoto) {
+        
     }
 }
 

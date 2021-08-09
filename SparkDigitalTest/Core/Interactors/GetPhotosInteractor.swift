@@ -13,9 +13,9 @@ protocol PhotosGettable {
 
 final class GetPhotosInteractor: PhotosGettable {
     
-    private let service: PhotosServices
+    private let service: PhotoServiceType
     
-    init(service: PhotosServices) {
+    init(service: PhotoServiceType) {
         self.service = service
     }
     

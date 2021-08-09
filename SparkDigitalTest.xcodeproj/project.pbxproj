@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10191199355499DEB8760FC2 /* Pods_SparkDigitalTest_SparkDigitalTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ED4EF6CD64E27A66847528 /* Pods_SparkDigitalTest_SparkDigitalTestUITests.framework */; };
+		1345D8AD025144777456F4C8 /* Pods_SparkDigitalTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFD5EFDD9F8E0384CFCA595 /* Pods_SparkDigitalTestTests.framework */; };
+		606F37AEA26F3BE30F6BC3A2 /* Pods_SparkDigitalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881A5248F77A8E4594DC6EF3 /* Pods_SparkDigitalTest.framework */; };
 		A54D49AE26C0B79800AFB7B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49AD26C0B79800AFB7B4 /* AppDelegate.swift */; };
 		A54D49B726C0B79900AFB7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54D49B626C0B79900AFB7B4 /* Assets.xcassets */; };
 		A54D49BA26C0B79A00AFB7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54D49B826C0B79A00AFB7B4 /* LaunchScreen.storyboard */; };
@@ -33,6 +36,10 @@
 		A54D4A0A26C0CAFA00AFB7B4 /* WebClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A0926C0CAFA00AFB7B4 /* WebClientTests.swift */; };
 		A54D4A0B26C0CB0D00AFB7B4 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49EA26C0BBB600AFB7B4 /* WebClient.swift */; };
 		A54D4A0E26C0CB4500AFB7B4 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A0D26C0CB4500AFB7B4 /* URLProtocolMock.swift */; };
+		A54D4A1026C0CCBB00AFB7B4 /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A0F26C0CCBB00AFB7B4 /* PhotoListView.swift */; };
+		A54D4A1226C0CDC500AFB7B4 /* CollectionViewDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A1126C0CDC500AFB7B4 /* CollectionViewDataAdapter.swift */; };
+		A54D4A1426C0D06500AFB7B4 /* PhotoListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A1326C0D06500AFB7B4 /* PhotoListCollectionCell.swift */; };
+		A54D4A1626C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A1526C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15ED4EF6CD64E27A66847528 /* Pods_SparkDigitalTest_SparkDigitalTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkDigitalTest_SparkDigitalTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F759B7FEA7D4D2C175BA4B0 /* Pods-SparkDigitalTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTestTests.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTestTests/Pods-SparkDigitalTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E6A261F35230EE8C786BDFB /* Pods-SparkDigitalTest-SparkDigitalTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest-SparkDigitalTestUITests.release.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		881A5248F77A8E4594DC6EF3 /* Pods_SparkDigitalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkDigitalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFD5EFDD9F8E0384CFCA595 /* Pods_SparkDigitalTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkDigitalTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A436946F0C4899F6BCD5083D /* Pods-SparkDigitalTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTestTests.release.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTestTests/Pods-SparkDigitalTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A54D49AA26C0B79800AFB7B4 /* SparkDigitalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkDigitalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54D49AD26C0B79800AFB7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54D49B626C0B79900AFB7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +93,13 @@
 		A54D4A0226C0C9BC00AFB7B4 /* APIEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointTests.swift; sourceTree = "<group>"; };
 		A54D4A0926C0CAFA00AFB7B4 /* WebClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClientTests.swift; sourceTree = "<group>"; };
 		A54D4A0D26C0CB4500AFB7B4 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		A54D4A0F26C0CCBB00AFB7B4 /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		A54D4A1126C0CDC500AFB7B4 /* CollectionViewDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataAdapter.swift; sourceTree = "<group>"; };
+		A54D4A1326C0D06500AFB7B4 /* PhotoListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListCollectionCell.swift; sourceTree = "<group>"; };
+		A54D4A1526C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderInteractor.swift; sourceTree = "<group>"; };
+		BFA2401B0E5B388F25960F8B /* Pods-SparkDigitalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C974D380DE2EDCB5EAD47D3E /* Pods-SparkDigitalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest.release.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest.release.xcconfig"; sourceTree = "<group>"; };
+		D905B11AACE4A4AF625B5786 /* Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606F37AEA26F3BE30F6BC3A2 /* Pods_SparkDigitalTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1345D8AD025144777456F4C8 /* Pods_SparkDigitalTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,12 +123,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10191199355499DEB8760FC2 /* Pods_SparkDigitalTest_SparkDigitalTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1EDB9C435403E59DF2375F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFA2401B0E5B388F25960F8B /* Pods-SparkDigitalTest.debug.xcconfig */,
+				C974D380DE2EDCB5EAD47D3E /* Pods-SparkDigitalTest.release.xcconfig */,
+				D905B11AACE4A4AF625B5786 /* Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig */,
+				7E6A261F35230EE8C786BDFB /* Pods-SparkDigitalTest-SparkDigitalTestUITests.release.xcconfig */,
+				1F759B7FEA7D4D2C175BA4B0 /* Pods-SparkDigitalTestTests.debug.xcconfig */,
+				A436946F0C4899F6BCD5083D /* Pods-SparkDigitalTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		87886569F2CC68F057DD1E5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				881A5248F77A8E4594DC6EF3 /* Pods_SparkDigitalTest.framework */,
+				15ED4EF6CD64E27A66847528 /* Pods_SparkDigitalTest_SparkDigitalTestUITests.framework */,
+				9AFD5EFDD9F8E0384CFCA595 /* Pods_SparkDigitalTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A54D49A126C0B79800AFB7B4 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +160,8 @@
 				A54D49C326C0B79A00AFB7B4 /* SparkDigitalTestTests */,
 				A54D49CE26C0B79A00AFB7B4 /* SparkDigitalTestUITests */,
 				A54D49AB26C0B79800AFB7B4 /* Products */,
+				2F1EDB9C435403E59DF2375F /* Pods */,
+				87886569F2CC68F057DD1E5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +221,9 @@
 			children = (
 				A54D49E126C0B97D00AFB7B4 /* PhotosListViewModel.swift */,
 				A54D49E326C0B9B000AFB7B4 /* PhotoListViewController.swift */,
+				A54D4A0F26C0CCBB00AFB7B4 /* PhotoListView.swift */,
+				A54D4A1326C0D06500AFB7B4 /* PhotoListCollectionCell.swift */,
+				A54D4A1126C0CDC500AFB7B4 /* CollectionViewDataAdapter.swift */,
 			);
 			path = PhotosList;
 			sourceTree = "<group>";
@@ -181,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				A54D49E626C0BAE300AFB7B4 /* GetPhotosInteractor.swift */,
+				A54D4A1526C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -267,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54D49D426C0B79A00AFB7B4 /* Build configuration list for PBXNativeTarget "SparkDigitalTest" */;
 			buildPhases = (
+				01D15D82C805D794CADB8966 /* [CP] Check Pods Manifest.lock */,
 				A54D49A626C0B79800AFB7B4 /* Sources */,
 				A54D49A726C0B79800AFB7B4 /* Frameworks */,
 				A54D49A826C0B79800AFB7B4 /* Resources */,
+				774F5E3DB7A8F64F35D2F070 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54D49D726C0B79A00AFB7B4 /* Build configuration list for PBXNativeTarget "SparkDigitalTestTests" */;
 			buildPhases = (
+				408090BA1D1924418545F7A4 /* [CP] Check Pods Manifest.lock */,
 				A54D49BC26C0B79A00AFB7B4 /* Sources */,
 				A54D49BD26C0B79A00AFB7B4 /* Frameworks */,
 				A54D49BE26C0B79A00AFB7B4 /* Resources */,
@@ -302,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A54D49DA26C0B79A00AFB7B4 /* Build configuration list for PBXNativeTarget "SparkDigitalTestUITests" */;
 			buildPhases = (
+				D9E5E46141D9914B1AAD0255 /* [CP] Check Pods Manifest.lock */,
 				A54D49C726C0B79A00AFB7B4 /* Sources */,
 				A54D49C826C0B79A00AFB7B4 /* Frameworks */,
 				A54D49C926C0B79A00AFB7B4 /* Resources */,
+				5EFB4C2867DE6AC881E61CC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +441,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01D15D82C805D794CADB8966 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkDigitalTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		408090BA1D1924418545F7A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkDigitalTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EFB4C2867DE6AC881E61CC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		774F5E3DB7A8F64F35D2F070 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E5E46141D9914B1AAD0255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkDigitalTest-SparkDigitalTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A54D49A626C0B79800AFB7B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -393,6 +553,8 @@
 				A54D49F226C0BCCA00AFB7B4 /* PhotosServices.swift in Sources */,
 				A54D49F826C0C88A00AFB7B4 /* BaseURLProviderType.swift in Sources */,
 				A54D49FA26C0C8B500AFB7B4 /* WebClientError.swift in Sources */,
+				A54D4A1426C0D06500AFB7B4 /* PhotoListCollectionCell.swift in Sources */,
+				A54D4A1626C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift in Sources */,
 				A54D49DF26C0B8EC00AFB7B4 /* AppCoordinator.swift in Sources */,
 				A54D49F426C0C4FB00AFB7B4 /* APIPhoto.swift in Sources */,
 				A54D49EF26C0BC2B00AFB7B4 /* APIRequest.swift in Sources */,
@@ -403,6 +565,8 @@
 				A54D49E226C0B97D00AFB7B4 /* PhotosListViewModel.swift in Sources */,
 				A54D49F626C0C86800AFB7B4 /* WebService.swift in Sources */,
 				A54D49EB26C0BBB600AFB7B4 /* WebClient.swift in Sources */,
+				A54D4A1226C0CDC500AFB7B4 /* CollectionViewDataAdapter.swift in Sources */,
+				A54D4A1026C0CCBB00AFB7B4 /* PhotoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +739,7 @@
 		};
 		A54D49D526C0B79A00AFB7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA2401B0E5B388F25960F8B /* Pods-SparkDigitalTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -593,6 +758,7 @@
 		};
 		A54D49D626C0B79A00AFB7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C974D380DE2EDCB5EAD47D3E /* Pods-SparkDigitalTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -611,6 +777,7 @@
 		};
 		A54D49D826C0B79A00AFB7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F759B7FEA7D4D2C175BA4B0 /* Pods-SparkDigitalTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -632,6 +799,7 @@
 		};
 		A54D49D926C0B79A00AFB7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A436946F0C4899F6BCD5083D /* Pods-SparkDigitalTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,6 +821,7 @@
 		};
 		A54D49DB26C0B79A00AFB7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D905B11AACE4A4AF625B5786 /* Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +841,7 @@
 		};
 		A54D49DC26C0B79A00AFB7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6A261F35230EE8C786BDFB /* Pods-SparkDigitalTest-SparkDigitalTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

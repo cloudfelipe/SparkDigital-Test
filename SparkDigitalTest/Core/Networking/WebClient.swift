@@ -11,13 +11,14 @@ typealias RequestResultable<T: Decodable> = (Result<T, WebClientError>) -> Void
 
 protocol WebClientType {
     func loadAPIRequest<T: APIRequestType>(request: T, completion: @escaping RequestResultable<T.ResponseDataType>)
+    func downloadImage(from url: URL, completion: @escaping (Result<URL, WebClientError>) -> Void)
 }
 
 final class WebClient: WebClientType {
     
     let urlSession: URLSession
     
-    public init(urlSession: URLSession = .shared) {
+    init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
     }
     
@@ -49,5 +50,15 @@ final class WebClient: WebClientType {
         } catch {
             completion(.failure(.noDataResponse))
         }
+    }
+    
+    func downloadImage(from url: URL, completion: @escaping (Result<URL, WebClientError>) -> Void) {
+        urlSession.downloadTask(with: url) { temporalURl, _, error in
+            guard let temporalURl = temporalURl else {
+                completion(.failure(.noDataResponse))
+                return
+            }
+            completion(.success(temporalURl))
+        }.resume()
     }
 }
