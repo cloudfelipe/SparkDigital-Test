@@ -35,7 +35,7 @@ final class AppCoordinator: AppCoordinatorType {
     func showPhotoDetail(_ photo: APIPhoto) {
         let dependencies = PhotoDetailViewModelImplementation
             .InputDependencies(photo: photo,
-                               imageDownloader: dependencies.imageDownloader)
+                               imageDownloader: self.dependencies.imageDownloader)
         let viewModel = PhotoDetailViewModelImplementation(dependencies: dependencies)
         let viewController = PhotoDetailViewController(viewModel: viewModel)
         
