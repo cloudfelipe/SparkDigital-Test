@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import SkeletonView
 
 final class PhotoDetailView: UIView {
     
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "template")
+        imageView.isSkeletonable = true
         return imageView
     }()
     
@@ -20,10 +22,20 @@ final class PhotoDetailView: UIView {
         backgroundColor = .white
         self.addSubview(imageView)
         setupConstraints()
+        isSkeletonable = true
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func loading() {
+        self.showAnimatedGradientSkeleton(transition: .crossDissolve(0.25))
+    }
+    
+    func stopLoading() {
+        self.hideSkeleton()
     }
     
     private func setupConstraints() {

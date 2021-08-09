@@ -64,8 +64,8 @@ final class PhotoListViewModelImplementation: PhotoListViewModelType {
         dependencies.photosGettable.photos { [weak self] result in
             switch result {
             case .success(let photos):
-                self?.requestState.accept(.normal)
                 self?.photosRelay.accept(photos)
+                self?.requestState.accept(.normal)
             case .failure(let error):
                 debugPrint(error)
                 self?.requestState.accept(.error)

@@ -7,10 +7,12 @@
 
 import Foundation
 import RxSwift
+import RxRelay
 
 protocol PhotoDetailViewModelType: AnyObject {
     var disposeBag: DisposeBag { get }
     var photoImagePath: Observable<String> { get }
+    var dataRequestState: Observable<DataRequestState> { get }
     func viewDidLoad()
 }
 
@@ -27,7 +29,11 @@ final class PhotoDetailViewModelImplementation: PhotoDetailViewModelType {
         photoImage.asObservable()
     }
     
-    private let photoImage = BehaviorSubject<String>(value: "")
+    var dataRequestState: Observable<DataRequestState> {
+        return requestState.asObservable()
+    }
+    private let requestState = BehaviorRelay<DataRequestState>(value: .normal)
+    private let photoImage = BehaviorRelay<String>(value: "")
     private let dependencies: InputDependencies
     
     init(dependencies: InputDependencies) {
@@ -35,8 +41,16 @@ final class PhotoDetailViewModelImplementation: PhotoDetailViewModelType {
     }
     
     func viewDidLoad() {
-        dependencies.imageDownloader.download(from: dependencies.photo.url)
-            .bind(to: photoImage)
+        requestState.accept(.downloading)
+        dependencies
+            .imageDownloader
+            .download(from: dependencies.photo.url)
+            .subscribe(onNext: { [weak self] imagePath in
+                self?.photoImage.accept(imagePath)
+                self?.requestState.accept(.normal)
+            }, onError: { [weak self] error in
+                self?.requestState.accept(.error)
+            })
             .disposed(by: disposeBag)
     }
 }

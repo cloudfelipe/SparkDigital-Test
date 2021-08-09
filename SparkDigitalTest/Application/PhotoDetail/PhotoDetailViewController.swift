@@ -39,5 +39,21 @@ final class PhotoDetailViewController: UIViewController {
             .observe(on: MainScheduler.instance)
             .bind(to: photoView.imageView.rx.image)
             .disposed(by: viewModel.disposeBag)
+        
+        viewModel.dataRequestState
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] in self?.requestState($0) })
+            .disposed(by: viewModel.disposeBag)
+    }
+    
+    private func requestState(_ requestState: DataRequestState) {
+        DispatchQueue.main.async {
+            switch requestState {
+            case .downloading:
+                self.photoView.loading()
+            default:
+                self.photoView.stopLoading()
+            }
+        }
     }
 }
