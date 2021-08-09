@@ -44,6 +44,17 @@
 		A5D3FBB126C0FC1A00BEFA88 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB026C0FC1A00BEFA88 /* PhotoDetailView.swift */; };
 		A5D3FBB326C0FC3800BEFA88 /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB226C0FC3800BEFA88 /* PhotoDetailViewModel.swift */; };
 		A5D3FBB526C10B4300BEFA88 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB426C10B4300BEFA88 /* UIView+Extensions.swift */; };
+		A5D3FBB726C10C8800BEFA88 /* PhotoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBB626C10C8800BEFA88 /* PhotoServiceTests.swift */; };
+		A5D3FBB826C10CA900BEFA88 /* PhotosServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F126C0BCCA00AFB7B4 /* PhotosServices.swift */; };
+		A5D3FBB926C10CBD00BEFA88 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F526C0C86800AFB7B4 /* WebService.swift */; };
+		A5D3FBBA26C10CC200BEFA88 /* BaseURLProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F726C0C88A00AFB7B4 /* BaseURLProviderType.swift */; };
+		A5D3FBBB26C10CCA00BEFA88 /* APIPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49F326C0C4FB00AFB7B4 /* APIPhoto.swift */; };
+		A5D3FBBE26C110F400BEFA88 /* PhotoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBBD26C110F400BEFA88 /* PhotoListViewModelTests.swift */; };
+		A5D3FBBF26C1111B00BEFA88 /* PhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49E126C0B97D00AFB7B4 /* PhotosListViewModel.swift */; };
+		A5D3FBC026C1112A00BEFA88 /* GetPhotosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D49E626C0BAE300AFB7B4 /* GetPhotosInteractor.swift */; };
+		A5D3FBC126C1113200BEFA88 /* ImageDownloaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54D4A1526C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift */; };
+		A5D3FBC326C1115300BEFA88 /* AppCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBC226C1115300BEFA88 /* AppCoordinatorType.swift */; };
+		A5D3FBC426C1115900BEFA88 /* AppCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D3FBC226C1115300BEFA88 /* AppCoordinatorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +116,9 @@
 		A5D3FBB026C0FC1A00BEFA88 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		A5D3FBB226C0FC3800BEFA88 /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
 		A5D3FBB426C10B4300BEFA88 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A5D3FBB626C10C8800BEFA88 /* PhotoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoServiceTests.swift; sourceTree = "<group>"; };
+		A5D3FBBD26C110F400BEFA88 /* PhotoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModelTests.swift; sourceTree = "<group>"; };
+		A5D3FBC226C1115300BEFA88 /* AppCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorType.swift; sourceTree = "<group>"; };
 		BFA2401B0E5B388F25960F8B /* Pods-SparkDigitalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C974D380DE2EDCB5EAD47D3E /* Pods-SparkDigitalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest.release.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest.release.xcconfig"; sourceTree = "<group>"; };
 		D905B11AACE4A4AF625B5786 /* Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-SparkDigitalTest-SparkDigitalTestUITests/Pods-SparkDigitalTest-SparkDigitalTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A54D49C426C0B79A00AFB7B4 /* SparkDigitalTestTests.swift */,
+				A5D3FBBC26C110E200BEFA88 /* ViewModels */,
 				A54D4A0026C0C99400AFB7B4 /* Networking */,
 				A54D49C626C0B79A00AFB7B4 /* Info.plist */,
 			);
@@ -222,6 +237,7 @@
 				A54D49DE26C0B8EC00AFB7B4 /* AppCoordinator.swift */,
 				A54D49E026C0B94E00AFB7B4 /* PhotosList */,
 				A5D3FBAD26C0FACB00BEFA88 /* PhotoDetail */,
+				A5D3FBC226C1115300BEFA88 /* AppCoordinatorType.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -310,6 +326,7 @@
 				A54D4A0C26C0CB3900AFB7B4 /* Mocks */,
 				A54D4A0226C0C9BC00AFB7B4 /* APIEndpointTests.swift */,
 				A54D4A0926C0CAFA00AFB7B4 /* WebClientTests.swift */,
+				A5D3FBB626C10C8800BEFA88 /* PhotoServiceTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -330,6 +347,14 @@
 				A5D3FBB226C0FC3800BEFA88 /* PhotoDetailViewModel.swift */,
 			);
 			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		A5D3FBBC26C110E200BEFA88 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5D3FBBD26C110F400BEFA88 /* PhotoListViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +387,7 @@
 				A54D49BC26C0B79A00AFB7B4 /* Sources */,
 				A54D49BD26C0B79A00AFB7B4 /* Frameworks */,
 				A54D49BE26C0B79A00AFB7B4 /* Resources */,
+				D603B17E366856A59ACB525B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -540,6 +566,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTest/Pods-SparkDigitalTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D603B17E366856A59ACB525B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTestTests/Pods-SparkDigitalTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTestTests/Pods-SparkDigitalTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SparkDigitalTestTests/Pods-SparkDigitalTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D9E5E46141D9914B1AAD0255 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,6 +621,7 @@
 				A54D4A1626C0F6E500AFB7B4 /* ImageDownloaderInteractor.swift in Sources */,
 				A54D49DF26C0B8EC00AFB7B4 /* AppCoordinator.swift in Sources */,
 				A5D3FBB126C0FC1A00BEFA88 /* PhotoDetailView.swift in Sources */,
+				A5D3FBC326C1115300BEFA88 /* AppCoordinatorType.swift in Sources */,
 				A54D49F426C0C4FB00AFB7B4 /* APIPhoto.swift in Sources */,
 				A5D3FBB526C10B4300BEFA88 /* UIView+Extensions.swift in Sources */,
 				A54D49EF26C0BC2B00AFB7B4 /* APIRequest.swift in Sources */,
@@ -598,14 +642,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D3FBB826C10CA900BEFA88 /* PhotosServices.swift in Sources */,
 				A54D49C526C0B79A00AFB7B4 /* SparkDigitalTestTests.swift in Sources */,
 				A54D4A0E26C0CB4500AFB7B4 /* URLProtocolMock.swift in Sources */,
+				A5D3FBBA26C10CC200BEFA88 /* BaseURLProviderType.swift in Sources */,
 				A54D4A0A26C0CAFA00AFB7B4 /* WebClientTests.swift in Sources */,
+				A5D3FBC126C1113200BEFA88 /* ImageDownloaderInteractor.swift in Sources */,
 				A54D4A0426C0CA0700AFB7B4 /* APIRequest.swift in Sources */,
+				A5D3FBB726C10C8800BEFA88 /* PhotoServiceTests.swift in Sources */,
+				A5D3FBBE26C110F400BEFA88 /* PhotoListViewModelTests.swift in Sources */,
+				A5D3FBBB26C10CCA00BEFA88 /* APIPhoto.swift in Sources */,
+				A5D3FBBF26C1111B00BEFA88 /* PhotosListViewModel.swift in Sources */,
+				A5D3FBB926C10CBD00BEFA88 /* WebService.swift in Sources */,
 				A54D4A0726C0CAA800AFB7B4 /* WebClientError.swift in Sources */,
 				A54D4A0326C0C9BC00AFB7B4 /* APIEndpointTests.swift in Sources */,
+				A5D3FBC026C1112A00BEFA88 /* GetPhotosInteractor.swift in Sources */,
 				A54D4A0626C0CA9B00AFB7B4 /* URLRequest+Extensions.swift in Sources */,
 				A54D4A0526C0CA0900AFB7B4 /* APIEndpoint.swift in Sources */,
+				A5D3FBC426C1115900BEFA88 /* AppCoordinatorType.swift in Sources */,
 				A54D4A0B26C0CB0D00AFB7B4 /* WebClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

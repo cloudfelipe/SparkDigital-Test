@@ -14,9 +14,9 @@ protocol PhotoServiceType: AnyObject {
 
 final class PhotosServices: WebService, PhotoServiceType {
     
-    private let fileManager: FileManager
+    private let fileManager: FileProvider
     
-    init(baseUrlProvider: BaseURLProviderType, client: WebClientType, fileManager: FileManager = .default) {
+    init(baseUrlProvider: BaseURLProviderType, client: WebClientType, fileManager: FileProvider = FileManager.default) {
         self.fileManager = fileManager
         super.init(baseUrlProvider: baseUrlProvider, client: client)
     }
@@ -61,4 +61,16 @@ final class PhotosServices: WebService, PhotoServiceType {
         }
 
     }
+}
+
+protocol FileProvider: AnyObject {
+    var temporaryDirectory: URL { get }
+    func fileExists(atPath path: String) -> Bool
+    func removeItem(at URL: URL) throws
+    func copyItem(at srcURL: URL, to dstURL: URL) throws
+}
+
+
+extension FileManager: FileProvider {
+    
 }

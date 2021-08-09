@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol AppCoordinatorType {
-    func showPhotoDetail(_ photo: APIPhoto)
-}
-
 final class AppCoordinator: AppCoordinatorType {
     
     struct InputDependencies {
