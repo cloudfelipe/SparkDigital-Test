@@ -50,6 +50,7 @@ final class PhotoServiceTests: XCTestCase {
         super.setUp()
         clientStub = WebClientStub()
         fileProviderStub = FileProviderStub()
+        
         sut = PhotosServices(baseUrlProvider: URLProviderStub(),
                              client: clientStub, fileManager: fileProviderStub)
     }
